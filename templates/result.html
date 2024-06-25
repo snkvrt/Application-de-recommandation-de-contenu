@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultat de la recherche</title>
+</head>
+<body>
+    <h1>Résultat de la recherche</h1>
+    <p>Utilisateur : {{ user_id }}</p>
+    <p>Articles associés :</p>
+    <ul>
+        {% for article_id in article_ids %}
+            <li>{{ article_id }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
